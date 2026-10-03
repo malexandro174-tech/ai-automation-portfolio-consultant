@@ -1,0 +1,15 @@
+flowchart TD
+  V["Visitor"] --> W["Public Web Widget"]
+  W --> API["FastAPI"]
+  API --> Q["Query Normalizer"]
+  Q --> E["BAAI/bge-m3 Embeddings"]
+  E --> DB[("PostgreSQL + pgvector")]
+  Q --> FTS["Full Text Search"]
+  DB --> RRF["RRF Hybrid Retrieval"]
+  FTS --> RRF
+  RRF --> CTX["Context Builder"]
+  CTX --> B["Access & Integration Broker"]
+  B --> LLM["DeepSeek"]
+  LLM --> AV["Answer Validator"]
+  CTX -. "source checks" .-> AV
+  AV --> OUT["Sources / Solution Matcher / CTA"]

@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-03",
+  "tests_passed": 69,
+  "tests_failed": 0,
+  "command": "python -m pytest -q",
+  "scope": "Offline public source regression, synthetic fixtures and mocked integrations",
+  "production_connections": false,
+  "ci_workflow_claimed": false
+}

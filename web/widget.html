@@ -1,0 +1,11 @@
+<!-- Integration fragment; the host page supplies styling tokens and #contact. -->
+<aside class="faq-widget" id="faq-widget" aria-label="AI-консультант MAG">
+<button class="faq-launch" id="faq-launch" type="button" aria-expanded="false" aria-controls="faq-panel">Спросить AI-консультанта <span>↗</span></button>
+<section class="faq-panel" id="faq-panel" hidden>
+<div class="faq-head"><div><strong>AI-консультант MAG</strong><p>Автоматизация · AI · интеграции</p></div><button id="faq-close" type="button" aria-label="Закрыть чат">×</button></div>
+<div class="faq-tools"><label>Режим <select id="faq-mode"><option value="auto">Авто</option><option value="qa">Вопрос о портфолио</option><option value="solution_matcher">Подобрать кейс</option></select></label><button id="faq-reset" type="button">Новый диалог</button></div>
+<div class="faq-messages" id="faq-messages" aria-live="polite"><p class="faq-answer">Здравствуйте! Я AI-консультант MAG. Отвечаю по публичной базе с источниками. Опишите задачу — подберу подтверждённый опыт. Контакты вводите только в форме заявки.</p></div>
+<div class="faq-suggestions" id="faq-suggestions"><button type="button">Какие задачи можно автоматизировать?</button><button type="button">Что вы делаете в n8n?</button><button type="button">Какие проекты уже реализованы?</button></div>
+<form id="faq-form"><label class="faq-input"><span class="sr-only">Ваш вопрос</span><input id="faq-input" maxlength="1200" required placeholder="Задайте вопрос…" autocomplete="off"><button type="submit">→</button></label></form>
+</section>
+</aside>
